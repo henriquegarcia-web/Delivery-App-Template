@@ -7,7 +7,7 @@ import {
 const Payment = () => {
   return (
     <PaymentContainer>
-      
+      Payment
     </PaymentContainer>
   )
 }

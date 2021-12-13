@@ -7,7 +7,7 @@ import {
 const Cart = () => {
   return (
     <CartContainer>
-      
+      Cart
     </CartContainer>
   )
 }

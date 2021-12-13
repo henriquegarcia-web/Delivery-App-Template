@@ -7,7 +7,7 @@ import {
 const Login = () => {
   return (
     <LoginContainer>
-      
+      Login
     </LoginContainer>
   )
 }

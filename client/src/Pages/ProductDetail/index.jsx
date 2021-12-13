@@ -7,7 +7,7 @@ import {
 const ProductDetail = () => {
   return (
     <ProductDetailContainer>
-      
+      ProductDetail
     </ProductDetailContainer>
   )
 }

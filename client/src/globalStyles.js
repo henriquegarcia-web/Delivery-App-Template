@@ -1,5 +1,4 @@
 import styled, { createGlobalStyle } from "styled-components";
-import { ExperiencesContainer } from "./Components/Qualifications/style";
 
 const GlobalStyle = createGlobalStyle`
   * {

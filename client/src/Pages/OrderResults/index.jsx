@@ -7,7 +7,7 @@ import {
 const OrderResults = () => {
   return (
     <OrderResultsContainer>
-      
+      OrderResults
     </OrderResultsContainer>
   )
 }

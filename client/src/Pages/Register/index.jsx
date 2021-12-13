@@ -7,7 +7,7 @@ import {
 const Register = () => {
   return (
     <RegisterContainer>
-      
+      Register
     </RegisterContainer>
   )
 }

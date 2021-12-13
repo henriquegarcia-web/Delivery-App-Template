@@ -7,7 +7,7 @@ import {
 const Panel = () => {
   return (
     <PanelContainer>
-      
+      Panel
     </PanelContainer>
   )
 }
