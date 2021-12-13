@@ -17,8 +17,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   :root {
-    --grey: #ededed;
-    --grey-hover: #e0e0e0;
+    --orange: #F28907; // #FDA704 #F2B807
+    --orange-hover: ; // 
+    --red: #F21B07;
+    --green: #D2D907; // #C8E205
+    --grey: #f2f2f2;
   }
 
   // ------ SCROLL BAR
