@@ -13,15 +13,14 @@ export const HeaderContainer = styled.div`
   }
 
   .header__item {
-    background: white;
-    width: 46px;
-    height: 46px;
+    background: var(--grey);
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     overflow: hidden;
-    border: 4px solid white;
 
     svg {
       color: rgba(0, 0, 0, 0.8);
@@ -34,6 +33,13 @@ export const HeaderContainer = styled.div`
       object-fit: cover;
     }
   }
+
+  .header__title {
+    h2 {
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
 `
 
 export const MenuMobileContainer = styled.div`
@@ -41,8 +47,8 @@ export const MenuMobileContainer = styled.div`
 
   .menu__icon {
     position: absolute;
-    width: 46px;
-    height: 46px;
+    width: 40px;
+    height: 40px;
     top: 15px;
     display: flex;
     justify-content: center;

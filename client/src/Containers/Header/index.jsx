@@ -11,7 +11,9 @@ import {
   FiUser,
   FiX,
   FiHeart,
-  FiShoppingCart
+  FiShoppingCart,
+  FiChevronLeft,
+  FiMoreHorizontal,
 } from "react-icons/fi";
 
 import { MainData } from '../../Data/data';
@@ -77,15 +79,14 @@ const HeaderRender = ({ type }) => {
 
 // ---------------------------------------- FUNÇÕES DE CADA HEADER
 
+const userInfo = MainData.accounts.users[0]
+
+const user = {
+  name: userInfo.name,
+  image: (userInfo.image ? <img src={userInfo.image} alt="" /> : <FiUser />)
+}
+
 const HeaderHomeApp = () => {
-
-  const userInfo = MainData.accounts.users[0]
-
-  const user = {
-    name: userInfo.name,
-    image: (userInfo.image ? <img src={userInfo.image} alt="" /> : <FiUser />)
-  }
-
   return (
     <>
       <MenuMobile />
@@ -102,7 +103,21 @@ const HeaderHomeApp = () => {
 const HeaderProductDetail = () => {
   return (
     <>
-      
+      <Link to='/app'>
+        <div className='header__item'>
+          <FiChevronLeft />
+        </div>
+      </Link>
+
+      <div className='header__title'>
+        <h2>Detalhes</h2>
+      </div>
+
+      <Link to='/saves'>
+        <div className='header__item'>
+          <FiHeart />
+        </div>
+      </Link>
     </>
   )
 }
@@ -110,7 +125,21 @@ const HeaderProductDetail = () => {
 const HeaderCart = () => {
   return (
     <>
-      
+      <Link to='/app'>
+        <div className='header__item'>
+          <FiChevronLeft />
+        </div>
+      </Link>
+
+      <div className='header__title'>
+        <h2>Carrinho</h2>
+      </div>
+
+      <Link to='/perfil'>
+        <div className='header__item'>
+          {user.image}
+        </div>
+      </Link>
     </>
   )
 }
@@ -118,15 +147,46 @@ const HeaderCart = () => {
 const HeaderPayment = () => {
   return (
     <>
-      
+      <Link to='/cart'>
+        <div className='header__item'>
+          <FiChevronLeft />
+        </div>
+      </Link>
+
+      <div className='header__title'>
+        <h2>Pagamento</h2>
+      </div>
+
+      <Link to='/perfil'>
+        <div className='header__item'>
+          {user.image}
+        </div>
+      </Link>
     </>
   )
 }
 
 const HeaderOrderResult = () => {
+
+  const result = 'Sucesso'
+
   return (
     <>
-      
+      <Link to='/app'>
+        <div className='header__item'>
+          <FiChevronLeft />
+        </div>
+      </Link>
+
+      <div className='header__title'>
+        <h2>{result}</h2>
+      </div>
+
+      <Link to='/perfil'>
+        <div className='header__item'>
+          {user.image}
+        </div>
+      </Link>
     </>
   )
 }
@@ -134,7 +194,21 @@ const HeaderOrderResult = () => {
 const HeaderUserInfo = () => {
   return (
     <>
-      
+      <Link to='/app'>
+        <div className='header__item'>
+          <FiChevronLeft />
+        </div>
+      </Link>
+
+      <div className='header__title'>
+        <h2>Minha conta</h2>
+      </div>
+
+      <Link to='/perfil'>
+        <div className='header__item'>
+          {user.image}
+        </div>
+      </Link>
     </>
   )
 }
@@ -142,7 +216,21 @@ const HeaderUserInfo = () => {
 const HeaderUserSaves = () => {
   return (
     <>
-      
+      <Link to='/app'>
+        <div className='header__item'>
+          <FiChevronLeft />
+        </div>
+      </Link>
+
+      <div className='header__title'>
+        <h2>Favoritos</h2>
+      </div>
+
+      <Link to='/perfil'>
+        <div className='header__item'>
+          {user.image}
+        </div>
+      </Link>
     </>
   )
 }

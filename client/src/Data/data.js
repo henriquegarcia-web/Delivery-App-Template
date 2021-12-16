@@ -5,6 +5,8 @@ import UserImage from '../Assets/Images/UserImage.jpg'
 import HamburguerIcon from '../Assets/FoodIcons/001-hamburguer.png'
 import DrinkIcon from '../Assets/FoodIcons/005-bebida.png'
 import PizzaIcon from '../Assets/FoodIcons/002-pizza.png'
+import MolhoIcon from '../Assets/FoodIcons/003-molhos.png'
+import FriersIcon from '../Assets/FoodIcons/010-fritas.png'
 
 import HamburguerImage from '../Assets/Images/Hamburguer.jpg'
 
@@ -57,7 +59,6 @@ export const MainData = {
             title: 'Hambúrguer Delícia',
             legend: 'Um hambúrguer super delicioso feito com amor',
             price: 29.90,
-            stock: 6,
             image: HamburguerImage
           },
         ]
@@ -73,7 +74,6 @@ export const MainData = {
             title: 'Coca Coca',
             legend: 'Uma Coca bem gelada de dar água na boca',
             price: 9.90,
-            stock: 4,
             image: HamburguerImage
           },
         ]
@@ -89,7 +89,6 @@ export const MainData = {
             title: 'Pizza',
             legend: 'Pizza redonda cortada em fatias triangulares',
             price: 99.90,
-            stock: 10,
             image: HamburguerImage
           },
         ]
@@ -105,7 +104,6 @@ export const MainData = {
             title: 'Hambúrguer Delícia',
             legend: 'Um hambúrguer super delicioso feito com amor',
             price: 29.90,
-            stock: 6,
             image: HamburguerImage
           },
         ]
@@ -121,7 +119,6 @@ export const MainData = {
             title: 'Coca Coca',
             legend: 'Uma Coca bem gelada de dar água na boca',
             price: 9.90,
-            stock: 4,
             image: HamburguerImage
           },
         ]
@@ -137,7 +134,6 @@ export const MainData = {
             title: 'Pizza',
             legend: 'Pizza redonda cortada em fatias triangulares',
             price: 99.90,
-            stock: 10,
             image: HamburguerImage
           },
         ]
@@ -149,15 +145,64 @@ export const MainData = {
         title: 'Hambúrguer Delícia',
         legend: 'Um hambúrguer super delicioso feito com amor',
         price: 29.90,
-        stock: 6,
-        image: HamburguerImage
+        image: HamburguerImage,
+        ingredients: [
+          {
+            id: 'ing-01',
+            img: MolhoIcon,
+            name: 'Ketchup'
+          },
+          {
+            id: 'ing-02',
+            img: MolhoIcon,
+            name: 'Mostarda'
+          },
+          {
+            id: 'ing-03',
+            img: FriersIcon,
+            name: 'Batatas'
+          },
+        ],
+        mandatoryItems: [
+          {
+            id: 'man-01',
+            name: 'Ketchup',
+            price: 10.00
+          },
+          {
+            id: 'man-02',
+            name: 'Mostarda',
+            price: 5.00
+          },
+          {
+            id: 'man-03',
+            name: 'Batatas',
+            price: 15.00
+          },
+        ],
+        additionalItems: [
+          {
+            id: 'add-01',
+            name: 'Ketchup',
+            price: 14.00
+          },
+          {
+            id: 'add-02',
+            name: 'Mostarda',
+            price: 8.00
+          },
+          {
+            id: 'add-03',
+            name: 'Batatas',
+            price: 4.00
+          },
+        ]
       },
       {
         id: 'pc-002',
         title: 'Coca Coca',
         legend: 'Uma Coca bem gelada',
         price: 9.90,
-        stock: 4,
         image: HamburguerImage
       },
       {
@@ -165,7 +210,6 @@ export const MainData = {
         title: 'Pizza',
         legend: 'Pizza redonda cortada em fatias triangulares',
         price: 99.90,
-        stock: 10,
         image: HamburguerImage
       },
       {
@@ -173,7 +217,6 @@ export const MainData = {
         title: 'Pizza',
         legend: 'Pizza redonda cortada em fatias triangulares',
         price: 99.90,
-        stock: 10,
         image: HamburguerImage
       },
     ]
