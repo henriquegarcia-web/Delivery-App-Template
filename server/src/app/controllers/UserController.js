@@ -1,10 +1,9 @@
 const UsersRepository = require('../repositories/UsersRepository');
 
 class UserController {
-  async index(request, response) {
-    const users = await UsersRepository.findAll();
-
-    response.json(users);
+  async login(request, response) {
+    const userLogged = await UsersRepository.findAll();
+    response.json(userLogged);
   }
 
   show() {

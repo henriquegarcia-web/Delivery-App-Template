@@ -9,8 +9,13 @@
   "description": "server-side application for delivery app",
   "author": "Marcus Vinicius e Henrique Pereira Garcia",
   "dependencies": {
+    "body-parser": "^1.19.1",
+    "cookie-session": "^1.4.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "uuidv4": "^6.2.12"
+    "express-session": "^1.17.2",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "eslint": "^8.4.1",
