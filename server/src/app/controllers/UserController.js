@@ -10,8 +10,10 @@ class UserController {
     // Obter um registro
   }
 
-  store() {
-    // Criar novo registro
+  async store() {
+    const {
+      name, email
+    }
   }
 
   update() {

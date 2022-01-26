@@ -1,5 +1,7 @@
 const { v4 } = require('uuid');
 
+const db = require('../../database');
+
 const users = [
   {
     id: v4(),
@@ -11,6 +13,12 @@ const users = [
 class UsersRepository {
   findAll() {
     return new Promise((resolve) => resolve(users));
+  }
+
+  async create({
+    name, email, phone, category_id,
+  }) {
+    const row = await db.query('INSERT INTO ');
   }
 }
 
