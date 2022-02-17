@@ -1,6 +1,6 @@
 ### Delivery App Template
 
-> Desenvolvedores: Henrique Garcia <br>
+> Desenvolvedor: Henrique Garcia <br>
 
 <br>
 
